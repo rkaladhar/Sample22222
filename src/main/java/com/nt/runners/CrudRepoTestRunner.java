@@ -23,8 +23,7 @@ public class CrudRepoTestRunner implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 		   try {
 			   CoronaVaccine vaccine=new CoronaVaccine("sputnik", "Russie", "Russia", 567.8,2);
-			   //CoronaVaccine vaccine=new CoronaVaccine(2);
-			  // CoronaVaccine vaccine=new CoronaVaccine();
+			
 			   vaccine.setCompany("Russie");
 			   vaccine.setPrice(567.8);
 			   service.searchVaccinesByGivenData(vaccine, true, "price").forEach(System.out::println);
