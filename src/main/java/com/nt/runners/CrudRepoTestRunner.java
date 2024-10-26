@@ -28,6 +28,8 @@ public class CrudRepoTestRunner implements CommandLineRunner {
 			   vaccine.setCompany("Russie");
 			   vaccine.setPrice(567.8);
 			   service.searchVaccinesByGivenData(vaccine, true, "price").forEach(System.out::println);
+		   
+		   
 		   }
 		   catch(DataAccessException dae) {
 			   dae.printStackTrace();
